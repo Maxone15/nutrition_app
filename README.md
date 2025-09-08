@@ -181,8 +181,8 @@ Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](L
 
 ## 👨‍💻 Autor
 
-**Maxim** - Científico de Datos & Desarrollador  
-- GitHub: [@maxone-or](https://github.com/maxone-or)  
+**Maximino Navarro Mentado** - Científico de Datos & Desarrollador  
+- GitHub: [@Maxone15](https://github.com/Maxone15)  
 - Shinyapps.io: [Generador_dietas](https://maxone-or.shinyapps.io/Generador_dietas)
 
 ## 🙏 Reconocimientos
