@@ -65,7 +65,7 @@ R --version
 
 ```bash
 # Clonar desde GitHub
-git clone https://github.com/maxone-or/nutrition_app.git
+git clone https://github.com/Maxone15/nutrition_app.git
 
 # Navegar al directorio
 cd nutrition_app
@@ -322,7 +322,7 @@ print(sessionInfo())
 
 Si encuentras problemas no cubiertos en esta guía:
 
-1. **Issues en GitHub**: [https://github.com/maxone-or/nutrition_app/issues](https://github.com/maxone-or/nutrition_app/issues)
+1. **Issues en GitHub**: [https://github.com/Maxone15/nutrition_app/issues](https://github.com/Maxone15/nutrition_app/issues)
 2. **Aplicación en vivo**: [https://maxone-or.shinyapps.io/Generador_dietas/](https://maxone-or.shinyapps.io/Generador_dietas/)
 
 ---
