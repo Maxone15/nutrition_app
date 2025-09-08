@@ -48,7 +48,7 @@ install.packages(c(
 ### Setup Local
 ```bash
 # 1. Fork y clonar
-git clone https://github.com/TU_USUARIO/nutrition_app.git
+git clone https://github.com/Maxone15/nutrition_app.git
 cd nutrition_app
 
 # 2. Crear rama de desarrollo
