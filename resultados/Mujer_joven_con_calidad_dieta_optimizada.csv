@@ -1,0 +1,15 @@
+"Alimento","Cantidad_sugerida","Unidad","Racion","Energia Total","Proteina Total","Lipidos Totales","Carbohidratos Totales","Colesterol Total","Sodio Total","CG Totales"
+"Brócoli crudo","1","taza",5.5,104.5,11.6,1.6,20.4,0,0,3.1
+"Cebolla blanca rebanada"," 1/2","taza",2,46,1.2,0.2,10.8,0,0,1.6
+"Cebolla cocida"," 1/4","taza",2,46,1.4,0.2,10.6,0,0,1.6
+"Cebollita de cambray sin raiz","3","pieza",8,184,10.4,0.8,42.4,0,0,6.4
+"Cereza","20","pieza",2,112,1.8,0.4,29.4,0,0,6.5
+"Harina de trigo integral","2 1/2","cucharada",1,64,2.6,0.3,13.6,0,0.4,4.1
+"Soya cocida"," 1/3","taza",4,392,37.6,20.4,22.4,0,2.4,4
+"Riñones de cerdo cocidos","28","g",0.5,21,3.5,0.7,0,67.2,11.2,0
+"Queso fresco","40","g",0.5,29,3,1.4,1,0,0,0
+"Queso panela","40","g",3,174,18.3,8.4,6,0,0,0
+"Leche entera baja en sodio","","",1.5,220.5,11.2,12.5,16,48.8,8.9,5
+"Falafel, hecho en casa","20","g",3,201,8.1,10.5,19.2,0,0,0
+"Hummus, de garbanzo (1 cda)","20","g",3,201,8.1,10.5,19.2,0,0,0
+"Total","-","-",36,1795,118.8,67.9,211,116,22.9,32.3

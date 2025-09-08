@@ -1,0 +1,8 @@
+"Alimento","Cantidad_sugerida","Unidad","Racion","Energia Total","Proteina Total","Lipidos Totales","Carbohidratos Totales","Colesterol Total","Sodio Total","CG Totales"
+"Arúgula cruda","4","taza",4.5,90,9.5,2.2,13,0,0,2
+"Berro crudo","2","taza",2.5,85,3.2,0.2,1.8,0,0,0.3
+"Soya cocida"," 1/3","taza",4,392,37.6,20.4,22.4,0,2.4,4
+"Queso panela","40","g",11,638,67.1,30.8,22,0,0,0
+"Falafel, hecho en casa","20","g",2.5,167.5,6.8,8.8,16,0,0,0
+"Aceite de oliva","1","Cucharadita",47,2068,0,32.9,173.9,0,0,0
+"Total","-","-",71.5,3440.5,124.2,95.3,249.1,0,2.4,6.3

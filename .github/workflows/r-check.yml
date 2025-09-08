@@ -1,0 +1,74 @@
+name: R-CMD-check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  R-CMD-check:
+    runs-on: ${{ matrix.config.os }}
+
+    name: ${{ matrix.config.os }} (${{ matrix.config.r }})
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - {os: windows-latest, r: 'release'}
+          - {os: macOS-latest, r: 'release'}
+          - {os: ubuntu-20.04, r: 'release', rspm: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"}
+
+    env:
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: true
+      RSPM: ${{ matrix.config.rspm }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ matrix.config.r }}
+
+      - uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Install system dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Install R dependencies
+        run: |
+          install.packages(c("remotes", "shiny", "shinydashboard", "DT", "plotly", "ggplot2", "dplyr", "readr", "openxlsx", "lpSolve"))
+        shell: Rscript {0}
+
+      - name: Check app structure
+        run: |
+          if (!file.exists("app.R")) stop("app.R not found")
+          if (!file.exists("global.R")) stop("global.R not found")
+          if (!dir.exists("modules")) stop("modules directory not found")
+          if (!dir.exists("www")) stop("www directory not found")
+          cat("✅ App structure is valid\n")
+        shell: Rscript {0}
+
+      - name: Test app loading
+        run: |
+          tryCatch({
+            source("global.R")
+            cat("✅ global.R loads successfully\n")
+          }, error = function(e) {
+            cat("❌ Error loading global.R:", e$message, "\n")
+            quit(status = 1)
+          })
+          
+          tryCatch({
+            if (file.exists("modules/load_data.R")) {
+              source("modules/load_data.R")
+              cat("✅ load_data.R loads successfully\n")
+            }
+          }, error = function(e) {
+            cat("⚠️ Warning loading modules:", e$message, "\n")
+          })
+        shell: Rscript {0}

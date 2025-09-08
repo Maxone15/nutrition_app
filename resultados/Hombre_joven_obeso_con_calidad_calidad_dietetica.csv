@@ -1,0 +1,11 @@
+Componente,Porciones_Actuales,Recomendacion,Puntuacion,Estado
+Frutas,2,2,10,✓ Cumple
+Verduras,30,2.5,10,✓ Cumple
+Legumbres,4,0.3,10,✓ Cumple
+Cereales,1,1,10,✓ Cumple
+Aceites/Grasas,6,1,10,✓ Cumple
+L�cteos,1.5,1.5-4.5,10,✓ Cumple
+Carnes,4,4,10,✓ Cumple
+Az�cares,0,2,10,✓ Cumple
+Variedad,NA,M�xima,10,6/6 grupos
+Practicidad,NA,Alta,10,✓ Práctica
