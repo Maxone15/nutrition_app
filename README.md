@@ -88,7 +88,7 @@ install.packages(c(
 ### Ejecutar Aplicación
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/maxone-or/nutrition_app.git
+git clone https://github.com/Maxone15/nutrition_app.git
 cd nutrition_app
 
 # 2. Abrir R y ejecutar
